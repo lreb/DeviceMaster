@@ -14,7 +14,7 @@
 
 	// crear conexion
 	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-	$r = $db->query("SELECT * FROM Users WHERE User ='$myusername' AND Password ='$mypassword'");
+	$r = $db->query("SELECT * FROM Users WHERE User ='$myusername' AND Password ='$mypassword' AND Deleted = 0");
 	// si el resultado es uno, si existe
 	if ($db->num_rows($r) == 1) {
 		//echo "existe";

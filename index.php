@@ -280,22 +280,22 @@
 					<div class="col-md-6">
 						<h2>Síguenos en</h2>
 						<p class="pull-right">
-				          <div class="social-popout"><a href="https://www.facebook.com/" target="_blank">
+				          <div class="social-popout"><a href="https://www.facebook.com/devicemasters" target="_blank">
 				            <img src="img/social_icons/Facebook.png" />
 				          </a></div>
 				          <div class="social-popout"><a href="https://github.com/lreb/DeviceMaster" target="_blank">
 				            <img src="img/social_icons/Github.png" />
 				          </a></div>
-				          <div class="social-popout"><a href="https://plus.google.com" target="_blank">
+				          <div class="social-popout"><a href="https://plus.google.com/u/0/109515309602941156336/posts" target="_blank">
 				            <img src="img/social_icons/Google-Plus.png" />
 				          </a></div>
-				          <div class="social-popout"><a href="https://www.linkedin.com" target="_blank">
+				          <div class="social-popout"><a href="https://www.linkedin.com/pub/device-master/a0/a57/64a/en" target="_blank">
 				            <img src="img/social_icons/Linkedin.png" />
 				          </a></div>
-				          <div class="social-popout"><a href="https://twitter.com/" target="_blank">
+				          <div class="social-popout"><a href="https://twitter.com/DeviceMaster" target="_blank">
 				            <img src="img/social_icons/Twitter-Bird.png" />
 				          </a></div>
-				          <div class="social-popout"><a href="https://www.youtube.com" target="_blank">
+				          <div class="social-popout"><a href="https://www.youtube.com/channel/UCuLG5tmqDMjMISu7wDtualA" target="_blank">
 				            <img src="img/social_icons/Youtube.png" />
 				          </a></div>
 				        </p>

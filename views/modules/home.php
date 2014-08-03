@@ -83,8 +83,8 @@
 
         $( document ).ready(function() {
             showPreloader();
-            //loadHomeCustomer();
-            loadEscritorio();
+            loadHomeCustomer();
+            //loadEscritorio();
         });
 
     <?php
@@ -110,7 +110,7 @@
 
     function loadHomeCustomer(){
         showPreloader();
-        $( "#allcontent" ).load( "../../views/modules/_homecustomer.php" );
+        $( "#allcontent" ).load( "../../views/modules/_homecustomer.php#f" );
     }
 
     function loadHome()

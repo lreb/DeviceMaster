@@ -133,7 +133,7 @@
 					  </div>
 					  <div class="col-md-4 form-group">
 					    <label for="InputUsuario">Usuario</label>
-					    <input type="text" class="form-control" id="iUsuario" name="iUsuario" placeholder="Introduce tu correo electrónico" required>
+					    <input type="text" class="form-control" id="iUsuario" name="iUsuario" placeholder="Introduce tu nombre de usuario" required>
 					  </div>
 					  <div class="col-md-4 form-group">
 					    <label for="InputUsuario">Password</label>

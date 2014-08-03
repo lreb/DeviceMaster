@@ -84,7 +84,22 @@
 				<input type="hidden" class="form-control" id="iIdUsuario" name="iIdUsuario" value="<?php echo $_SESSION['IdUsuario']; ?>">	
 			</div>
 			<div class="form-group col-md-4">
-				<button class="btn btn-lg btn-primary btn-block" onclick="loadHome();" type="button">Atras</button>
+				
+
+				<?php
+			        if($_SESSION['RolUsuario'] == 1){ 
+			    ?>
+
+			        <button class="btn btn-lg btn-primary btn-block" onclick="loadHome();" type="button">Atras</button>
+
+			    <?php } else { ?>
+
+			        <button class="btn btn-lg btn-primary btn-block" onclick="loadHomeCustomer();" type="button">Atras</button>
+
+			    <?php
+			        }
+			    ?>
+
 			</div>
 			<div class="form-group col-md-4">
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Guardar</button>

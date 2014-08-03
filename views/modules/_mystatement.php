@@ -2,15 +2,16 @@
 	include_once '../../application/Config.class.php';
 	include_once '../../application/Db.class.php';
 	
-	//session_start();
-	//$IdUser = $_SESSION['IdUsuario'];
+	session_start();
+	$IdUser = $_SESSION['IdUsuario'];
+
 	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 	$r = $db->query("select s.Id as 'sId', s.Registry as 'sDate', s.Quantity as 'sQuantity', s.Amount as 'sAmount',
 		c.Category as 'cCategory', p.Product as 'pProduct', p.Description as 'pDescription', p.Price as 'pPrice', s.deleted as 'sDeleted'
 		from Statements as s inner join users as u on s.UserRf = u.Id
 		inner join products as p on s.ProductRf = p.Id
 		inner join categories as c on p.CategoryRf = c.Id
-		where s.UserRf = 2 and s.deleted = 0;");	
+		where s.UserRf = $IdUser and s.deleted = 0;");	
 	
 		$total = 0;
 

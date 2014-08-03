@@ -24,7 +24,7 @@
 		<input type="hidden" name="" id="sectionRf" value="3" placeholder="">
 <div class="row">
 	<div class="col-md-12">
-		<h1>Laptops</h1>
+		<h1>Tablets</h1>
 			
 			<?php
 				while ($x = $db->fetch_array_assoc($r)) {

@@ -147,7 +147,7 @@
 		          // si es igual a 1 existe un error
 		          if($_REQUEST['message']==1)
 		          {
-		            echo "<div style='text-align: center; color: red; font-weight: bold; font-size: 16px;''> El usuario y la contraseña son invalidos </div>";
+		            echo "<div style='text-align: center; color: red; font-weight: bold; font-size: 16px;''> El usuario y la contraseña son invalidos o el acceso fue restringido</div>";
 		          } 
 		          elseif ($_REQUEST['message']==2)
 		          {

@@ -37,14 +37,14 @@
 	$selected = mysql_select_db($db_name ,$dbhandle) 
 	  or die("No se pudo establecer conexion con la base de datos");
 
-	//execute the SQL query and return records
+	//ejecuta la consulta
 	$result = mysql_query("SELECT id, model,year FROM cars");
 
-	//fetch tha data from the database 
+	// recorre un arreglo
 	while ($row = mysql_fetch_array($result)) {
 	   echo "ID:".$row{'id'}." Name:".$row{'model'}."Year: ". //display the results
 	   $row{'year'}."<br>";
 	}
-	//close the connection
+	//cierra la conexión 
 	mysql_close($dbhandle);
 ?>

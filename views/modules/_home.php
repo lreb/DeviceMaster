@@ -12,16 +12,13 @@
 </style>
 
 <div id="chart_div" style="width:400; height:300"></div>
+
 <div class="row">
   	<div class="col-md-12">
 
   		<div class="homemessage">
   			Bienvenido a la consola administrativa de Device Master donde podrá gestionar los recursos de la empresa.
   		</div>
-		<!--Div that will hold the pie chart-->
-    
-
-
 
   	</div>
 </div>

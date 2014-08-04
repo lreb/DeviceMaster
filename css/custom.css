@@ -15,15 +15,9 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
-	/*color: #005b95;
-	background: url('../img/psbg.png');*/
-
-
-		/*background-color:#000000; */
-  background-attachment: fixed; 
-  background-image: url(../img/site/bkPage.jpg); 
- /* background-repeat: no-repeat; */
-  background-position: right bottom; 
+	  background-attachment: fixed; 
+	  background-image: url(../img/site/bkPage.jpg); 
+	  background-position: right bottom; 
 }
 h1, .h1{
 	margin-top: 0px;

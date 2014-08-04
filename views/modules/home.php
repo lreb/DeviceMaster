@@ -145,9 +145,6 @@
 
     function loadEditProduct(idProduct)
     {
-        /*console.log(idProduct);
-        showPreloader();
-        $( "#allcontent" ).load( "../../views/modules/_productedit.php?productid="+idProduct );*/
         var parametros = {
                 "productid" : idProduct
         };
@@ -163,9 +160,7 @@
                         $("#allcontent").html(response);
                 }
         });
-        //e.preventDefault();
     }
-
 
     /*customers*/
 
@@ -227,7 +222,6 @@
                 url:   '../../models/comprarModel.php',
                 type:  'post',
                 beforeSend: function () {
-                    //showPreloader();
                     $("#refresh"+idProduct).html("Procesando…");
                 },
                 success:  function (response) {

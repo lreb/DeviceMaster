@@ -11,14 +11,7 @@
 						<!-- MASTHEAD -->
 						<div id="masthead-container">
 							<div id="masthead">
-								<!-- SOCIAL MEDIA
-								<div class="socialmedia">
-									<a href="" target="_blank" ><img src="img/icons/facebook.png" /></a>
-									<a href="" target="_blank" ><img src="img/icons/twitter.png" /></a>
-									<a href="" target="_blank" ><img src="img/icons/youtube.png" /></a>
-									<a href="" target="_blank" ><img src="img/icons/instagram.png" /></a>
-								</div>
-								-->
+
 								<!-- CALL TO ACTION -->
 								<div class="call"><h1><?php echo $_SESSION['Nombre']." ".$_SESSION['Apellido']; ?></h1>
 								<p>Usuario</p></div>
@@ -73,18 +66,6 @@
 						          	?>  
 									<li><a href="../../models/logoutModel.php">Cerrar Sesión</a></li>
 
-									<!--li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nav Item 6 <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li class="divider"></li>
-											<li class="dropdown-header">Nav header</li>
-											<li><a href="#">Separated link</a></li>
-											<li><a href="#">One more separated link</a></li>
-										</ul>
-									</li-->
 								</ul>
 							</div>
 						</div>

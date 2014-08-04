@@ -5,21 +5,19 @@
 		// request
 		$referencia=$_POST['Ref'];
 		$opcion=$_POST['Opc'];
-		//echo $opcion;
 
 		if (is_ajax()) {
-		  if (isset($_POST["Ref"]) ) { //Checks if action value exists
+		  if (isset($_POST["Ref"]) ) { 
 		    
 		    $db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 			$r = $db->query("UPDATE Users SET Deleted = $opcion WHERE Id = $referencia");
-		    //echo $r;
 		    return_function();
 		  }
 		}
 
 		/* AJAX FUNCTIONS */
 
-	    //Function to check if the request is an AJAX request
+	    //Función para verificar si el request es en AJAX
 	    function is_ajax() {
 	        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
 	    }

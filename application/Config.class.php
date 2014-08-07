@@ -13,29 +13,26 @@
 
 	//se define una url (opciona)
 	define('URL', 'http://127.0.0.1/php-mvc/');
-	//configuarcion de claves de acceso a bd produccion hotinger
-	/*define('DB_TYPE', 'mysql');
-	define('DB_HOST', 'http://sql28.hostinger.es/');
-	define('DB_NAME', 'u369815175_dema');
-	define('DB_USER', 'u369815175_luis');
-	define('DB_PASS', '!Luis200687Raul');*/
 
-	//configuarcion de claves de acceso a bd produccion
+	//configuarcion de claves de acceso a la base de datos de produccion  http://www.devicemaster.webege.com
+	/*
+	$mysql_host = "mysql14.000webhost.com";
+	$mysql_database = "a5916455_dmdb";
+	$mysql_user = "a5916455_dmuser";
+	$mysql_password = "Luis200687Raul";
+	*/
 	/*define('DB_TYPE', 'mysql');
-	define('DB_HOST', 'sql306.eshost.es');
-	define('DB_NAME', 'eshos_15060310_devicemaster');
-	define('DB_USER', 'eshos_15060310');
-	define('DB_PASS', 'misitio');*/
+	define('DB_HOST', 'mysql14.000webhost.com');
+	define('DB_NAME', 'a5916455_dmdb');
+	define('DB_USER', 'a5916455_dmuser');
+	define('DB_PASS', 'Luis200687Raul');*/
 
-	//configuarcion de claves de acceso a bd local
+	//configuarcion de claves de acceso a la base de datos local
 	define('DB_TYPE', 'mysql');
 	define('DB_HOST', 'localhost');
 	define('DB_NAME', 'devicemaster');
 	define('DB_USER', 'root');
 	define('DB_PASS', '');
-	
-
-	//$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 	//descometar solo para pruebas
 	/*

@@ -5,7 +5,7 @@
 	session_start();
 	$IdUser = $_SESSION['IdUsuario'];
 	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-	$r = $db->query("SELECT * FROM Users WHERE Id = $IdUser");
+	$r = $db->query("SELECT * FROM users WHERE Id = $IdUser");
 	
 	while ($x = $db->fetch_array_assoc($r)) {
 ?>

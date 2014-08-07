@@ -16,7 +16,7 @@
 	$micontrasena=$_POST['iPassword'];
 
 	// protejemos la consulta a la base de datos
-	$minombre = stripslashes($minombre);
+	/*$minombre = stripslashes($minombre);
 	$miapellido = stripslashes($miapellido);
 	$miemail = stripslashes($miemail);
 	$mipais = stripslashes($mipais);
@@ -33,10 +33,10 @@
 	$midireccion = mysql_real_escape_string($midireccion);
 	$micp = mysql_real_escape_string($micp);
 	$miusuario = mysql_real_escape_string($miusuario);
-	$micontrasena = mysql_real_escape_string($micontrasena);
+	$micontrasena = mysql_real_escape_string($micontrasena);*/
 
 	/* Creamos un query*/
-	$sql="INSERT INTO Users (RoleRf,User,Password,Name,LastName,BirthDay,Email,Phone,Country,State,Address,PostalCode,Deleted)"
+	$sql="INSERT INTO users (RoleRf,User,Password,Name,LastName,BirthDay,Email,Phone,Country,State,Address,PostalCode,Deleted)"
 			."VALUES (3,'$miusuario','$micontrasena','$minombre','$miapellido','$micumpleanos','$miemail','$mitelefono','$mipais'"
 			.",'$miestado','$midireccion','$micp',0)";
 	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);

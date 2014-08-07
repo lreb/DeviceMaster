@@ -6,7 +6,7 @@
 	$IdUser = $_SESSION['IdUsuario'];
 	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 	$r = $db->query("SELECT u.Id AS 'iduser',r.Role AS 'role', u.Name AS 'name', u.LastName AS 'lastname', u.Email AS 'email', 
-		u.Phone AS 'phone', u.Country AS 'country', u.Deleted AS 'deleted' FROM Users AS u INNER JOIN Roles AS r on u.RoleRf = r.Id");	
+		u.Phone AS 'phone', u.Country AS 'country', u.Deleted AS 'deleted' FROM users AS u INNER JOIN Roles AS r on u.RoleRf = r.Id");	
 	
 		/*echo $x['role'];
 		echo $x['name'];

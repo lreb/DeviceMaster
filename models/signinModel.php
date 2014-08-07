@@ -7,14 +7,16 @@
 	$myusername=$_POST['nUsuario']; 
 	$mypassword=$_POST['nContrasena']; 
 	// protejemos la consulta a la base de datos
-	$myusername = stripslashes($myusername);
+	/*$myusername = stripslashes($myusername);
 	$mypassword = stripslashes($mypassword);
 	$myusername = mysql_real_escape_string($myusername);
-	$mypassword = mysql_real_escape_string($mypassword);
+	$mypassword = mysql_real_escape_string($mypassword);*/
 
 	// crear conexion
 	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-	$r = $db->query("SELECT * FROM Users WHERE User ='$myusername' AND Password ='$mypassword' AND Deleted = 0");
+	//echo $db;
+	$r = $db->query("SELECT * FROM users WHERE User ='$myusername' AND Password ='$mypassword' AND Deleted = 0");
+
 	// si el resultado es uno, si existe
 	if ($db->num_rows($r) == 1) {
 		//echo "existe";
@@ -33,7 +35,7 @@
 		  }
 	}
 	else{
-		echo "no existe";	
+		//echo "no existe";	
 		header("location: ../views/modules/signin.php?message=1");
 	}
 ?>

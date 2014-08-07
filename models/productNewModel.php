@@ -75,7 +75,7 @@
 	if (is_ajax()) {
 		  if (isset($_POST["iProducto"]) ) { //Checks if action value exists
 		    
-			$sql="INSERT INTO Products VALUES ($miultimoid, $micategoria,'$miproducto','$midescripcion','$file_name',$miprecio,$micantidad);";
+			$sql="INSERT INTO products VALUES ($miultimoid, $micategoria,'$miproducto','$midescripcion','$file_name',$miprecio,$micantidad);";
 			echo $sql;
 
 			$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);

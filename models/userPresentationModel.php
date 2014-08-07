@@ -10,7 +10,7 @@
 		  if (isset($_POST["Ref"]) ) { 
 		    
 		    $db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-			$r = $db->query("UPDATE Users SET Deleted = $opcion WHERE Id = $referencia");
+			$r = $db->query("UPDATE users SET Deleted = $opcion WHERE Id = $referencia");
 		    return_function();
 		  }
 		}

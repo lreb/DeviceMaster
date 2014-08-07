@@ -37,7 +37,7 @@
 					$datenow = date("Y-m-d H:i:s");
 
 
-					$registroCreado="INSERT INTO Statements VALUES($idstatement,$miidusuario,$miproductid,'$datenow',"
+					$registroCreado="INSERT INTO statements VALUES($idstatement,$miidusuario,$miproductid,'$datenow',"
 						."$micantidad,$amount,0);";
 					$record = $db->query($registroCreado);
 

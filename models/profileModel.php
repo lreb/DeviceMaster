@@ -18,7 +18,7 @@
 	$micontrasena=$_POST['iPassword'];
 
 	// protejemos la consulta a la base de datos
-	$minombre = stripslashes($minombre);
+	/*$minombre = stripslashes($minombre);
 	$miapellido = stripslashes($miapellido);
 	$miemail = stripslashes($miemail);
 	$mipais = stripslashes($mipais);
@@ -35,13 +35,13 @@
 	$midireccion = mysql_real_escape_string($midireccion);
 	$micp = mysql_real_escape_string($micp);
 	$miusuario = mysql_real_escape_string($miusuario);
-	$micontrasena = mysql_real_escape_string($micontrasena);
+	$micontrasena = mysql_real_escape_string($micontrasena);*/
 
 	/* Creamos un query*/
 	//$sql="UPDATE Users SET Name ='$minombre', LastName='$miapellido', BirthDay=$micumpleanos, Email='$miemail', Phone=$mitelefono, 
 	//Country='$mipais', State='$miestado',Address='$midireccion', PostalCode=$micp, WHERE Id =$idusuario";
 	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-	$r = $db->query("UPDATE Users SET Name='$minombre', LastName='$miapellido', Email='$miemail', Phone=$mitelefono, Country='$mipais', 
+	$r = $db->query("UPDATE users SET Name='$minombre', LastName='$miapellido', Email='$miemail', Phone=$mitelefono, Country='$mipais', 
 		State='$miestado', Address='$midireccion', PostalCode=$micp where Id =$idusuario");
 
 	header("HTTP/1.1 301 Moved Permanently"); 

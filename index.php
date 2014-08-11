@@ -266,7 +266,7 @@
 		</div>		<div class="footer-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-12">
 						<h2>Síguenos en</h2>
 						<p class="pull-right">
 				          <div class="social-popout"><a href="https://www.facebook.com/devicemasters" target="_blank">
@@ -289,9 +289,9 @@
 				          </a></div>
 				        </p>
 					</div>
-					<div class="col-md-6">
+					<!--div class="col-md-6">
 						<div id="footer-map"></div>
-					</div>
+					</div-->
 				</div>
 			</div>
 		</div>

@@ -44,7 +44,7 @@
 				<label for="InputImagen">Categoria</label>
 				<select class="form-control"  name="iCategoria" id="iCategoria" required>
 				  <?php
-				  		$category = $db->query("SELECT * FROM Categories");
+				  		$category = $db->query("SELECT * FROM categories");
 					  	while ($x = $db->fetch_array_assoc($category)) {
 				  ?>
 							<option value="<?php echo $x['Id']; ?>"> <?php echo $x['Category']; ?> </option> 

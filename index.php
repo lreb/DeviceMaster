@@ -26,8 +26,7 @@
 					<div class="col-md-6">
 						<!-- LOGO -->
 						<div id="logo"><a href="/">
-						<!--img src="http://placehold.it/720x200/149cd7/149cd7" /-->
-							<img src="img/site/logo_1.png" alt="">
+							<img src="img/site/logo_1.png" class="lazy" alt="">
 						</a></div>
 					</div>
 					<div class="col-md-3 spacer"></div>
@@ -58,18 +57,6 @@
 									<li><!--a href="#"></a--></li>
 									<li><a href="views/modules/signup.php">Regístrate</a></li>
 									<li><a href="views/modules/signin.php">Autentifícate</a></li>
-									<!--li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nav Item 6 <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li class="divider"></li>
-											<li class="dropdown-header">Nav header</li>
-											<li><a href="#">Separated link</a></li>
-											<li><a href="#">One more separated link</a></li>
-										</ul>
-									</li-->
 								</ul>
 							</div>
 						</div>
@@ -85,12 +72,12 @@
 						<div class="camera_slider">
 							<!--div data-src="http://educationismylife.com/wp-content/uploads/2013/01/2222.jpg"></div>
 							<div data-src="http://www.wsprint.org/wp-content/uploads/2014/02/mobile-websites.jpg"></div-->
-							<div data-src="img/site/slider_5.jpg"></div>
-							<div data-src="img/site/slider_6.jpg"></div>
-							<div data-src="img/site/slider_7.jpg"></div>
-							<div data-src="img/site/slider_8.jpg"></div>
-							<div data-src="img/site/slider_9.jpg"></div>
-							<div data-src="img/site/slider_10.jpg"></div>
+							<div class="lazy" data-src="img/site/slider_5.jpg"></div>
+							<div class="lazy" data-src="img/site/slider_6.jpg"></div>
+							<div class="lazy" data-src="img/site/slider_7.jpg"></div>
+							<div class="lazy" data-src="img/site/slider_8.jpg"></div>
+							<div class="lazy" data-src="img/site/slider_9.jpg"></div>
+							<div class="lazy" data-src="img/site/slider_10.jpg"></div>
 						</div>
 					</div>
 				</div>
@@ -131,7 +118,7 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="animate-paraslide-image animatedEntrance">        
  							<a href="#conocenos">
-								<img src="img/site/conocenos.jpg" />
+								<img class="lazy" src="img/site/conocenos.jpg" />
 								<div class="overlay">        
 									<h3>Conócenos</h3>
 									<p>Danos la oportunidad de convencerte, Y no te arrepentirás. </p> 
@@ -142,7 +129,7 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="animate-paraslide-image animatedEntrance">        
  							<a href="#conocenos">
-								<img src="img/site/beneficios.jpg" />
+								<img class="lazy" src="img/site/beneficios.jpg" />
 								<div class="overlay">        
 									<h3>Beneficios</h3>
 									<p>Qué esperas entérate ya y disfruta, forma parte de la comunidad.</p> 
@@ -153,7 +140,7 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="animate-paraslide-image animatedEntrance">        
  							<a href="views/modules/signup.php">
-								<img src="img/site/unete.jpeg" />
+								<img class="lazy" src="img/site/unete.jpeg" />
 								<div class="overlay">        
 									<h3>Únete</h3>
 									<p>Es muy fácil y rápido no te quedes fuera. </p> 
@@ -164,7 +151,7 @@
 					<div class="col-md-3 col-sm-6">
 						<div class="animate-paraslide-image animatedEntrance">        
  							<a href="views/modules/signin.php">
-								<img src="img/site/disfruta.jpg" />
+								<img class="lazy" src="img/site/disfruta.jpg" />
 								<div class="overlay">        
 									<h3>Disfruta</h3>
 									<p>Bienvenido, disfruta tu buena elección. </p> 
@@ -180,30 +167,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_1.jpg"><img src="img/gallery/g_1.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_1.jpg"><img class="lazy" src="img/gallery/g_1.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_2.jpg"><img src="img/gallery/g_2.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_2.jpg"><img class="lazy" src="img/gallery/g_2.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_3.jpg"><img src="img/gallery/g_3.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_3.jpg"><img class="lazy" src="img/gallery/g_3.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_4.jpg"><img src="img/gallery/g_4.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_4.jpg"><img class="lazy" src="img/gallery/g_4.jpg" alt=""/></a>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_5.jpg"><img src="img/gallery/g_5.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_5.jpg"><img class="lazy" src="img/gallery/g_5.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_6.jpg"><img src="img/gallery/g_6.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_6.jpg"><img class="lazy" src="img/gallery/g_6.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_7.jpg"><img src="img/gallery/g_7.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_7.jpg"><img class="lazy" src="img/gallery/g_7.jpg" alt=""/></a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a class="fancybox" rel="gallery_group" href="img/gallery/g_8.jpg"><img src="img/gallery/g_8.jpg" alt=""/></a>
+						<a class="fancybox" rel="gallery_group" href="img/gallery/g_8.jpg"><img class="lazy" src="img/gallery/g_8.jpg" alt=""/></a>
 					</div>
 				</div>
 			</div>
@@ -272,7 +259,7 @@
 						</form>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<img src="img/site/contact-us.jpg" />
+						<img class="lazy" src="img/site/contact-us.jpg" />
 					</div>
 				</div>
 			</div>
@@ -323,6 +310,8 @@
 						
 		<!-- SCRIPTS -->
 		<script src="js/jquery-1.7.2.min.js"></script>
+		<!--script src="js/jquery.js" type="text/javascript"></script-->
+		<script src="js/jquery.lazyload.js" type="text/javascript"></script>
 		<script src="js/bootstrap-3.1.1.min.js"></script>
 		<script src="plugins/backstretch/backstretch-2.0.4.min.js"></script>
 		<script src="plugins/camera-slider/camera-slider-1.3.4.min.js"></script>
@@ -344,6 +333,16 @@
 
 
 <script type="text/javascript">
+
+	/*$(function() {
+	    //$("img.lazy").lazyload();
+	    threshold : 200
+	});*/
+
+
+	$("img.lazy").lazyload({
+	    threshold : 2000
+	});
 	
 	$('#btn-contact-us').on('click', function (e) {
         e.preventDefault();

@@ -68,6 +68,22 @@
 			}
 	// FINISH UPLOAD FILE
 
+	$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+	//archivo vacio
+	if(empty($file_name))
+	{
+		//echo "esta vacio";
+
+		$sql="SELECT Image FROM products WHERE Id = $miproductid;";
+		
+		//Ejecutamos el query
+		$r = $db->query($sql);
+
+		while ($x = $db->fetch_array_assoc($r)) {
+			$file_name = $x['Image'];
+		}
+	}
 
 
 	//VALIDAMOS SI ES UNA LLAMADA CON AJAX
@@ -78,7 +94,7 @@
 			." Price=$miprecio, Quantity=$micantidad where Id =$miproductid;";
 			//echo $sql;
 
-			$db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+			
 		    //Ejecutamos el query
 			$r = $db->query($sql);
 
@@ -87,7 +103,7 @@
 		  }
 		}
 
-		/* AJAX FUNCTIONS */
+	/* AJAX FUNCTIONS */
 	//Function to check if the request is an AJAX request
 	function is_ajax() {
 	        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';

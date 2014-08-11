@@ -65,6 +65,11 @@
 		margin: auto;
 		margin-top: 100px;
 		margin-bottom: 100px;
+
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #005B95;
 	}
 
 </style>
@@ -243,7 +248,8 @@
 
     function showPreloader()
     {
-        $("#allcontent").html("<div class='loader'><img src='../../img/site/preloader.gif'></div>");
+        //$("#allcontent").html("<div class='loader'><img src='../../img/site/preloader.gif'></div>");
+        $("#allcontent").html("<div class='loader'>Procesando...</div>");
     }
 
     function soloNumeros(e)

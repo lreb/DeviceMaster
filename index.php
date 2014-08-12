@@ -18,7 +18,8 @@
 		<![endif]-->	
 	</head>
 	<body>
-						
+	<?php include_once("analyticstracking.php") ?>	
+					
 		<header id="main-header">
 			<div class="container">
 				<div class="row">

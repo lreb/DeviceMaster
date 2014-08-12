@@ -18,8 +18,8 @@
 		<![endif]-->	
 	</head>
 	<body>
-	<?php include_once("analyticstracking.php") ?>	
-					
+	
+
 		<header id="main-header">
 			<div class="container">
 				<div class="row">
@@ -327,6 +327,8 @@
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script src="js/lollies.min.js"></script>
 		<script src="js/custom.js"></script>
+
+		<?php include_once 'analyticstracking.php'; ?>	
 	</body>
 
 

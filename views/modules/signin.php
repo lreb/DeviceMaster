@@ -103,6 +103,29 @@
 			
 			<div class="container">
 
+			<?php 
+		        // valida si existe una variable que indique que existe un error para mostrar un mensaje
+		        // valida no este vacia
+		        if (empty($_REQUEST['message'])) {
+		        }
+		        else
+		        {
+		          // si es igual a 1 existe un error
+		          if($_REQUEST['message']==1)
+		          {
+		            echo "<div style='text-align: center; color: red; font-weight: bold; font-size: 16px;''> El usuario y la contraseña son invalidos o el acceso fue restringido</div>";
+		          } 
+		          elseif ($_REQUEST['message']==2)
+		          {
+		            echo "<div style='text-align: center; color: green; font-weight: bold; font-size: 16px;''>Tu registro fue exitoso, ¡Autentifícate!</div>";
+		          } 
+		          else{
+
+		          }
+		        }
+		        
+		      ?>
+
 		      <form class="form-signin" role="form" method="post" action="../../models/signinModel.php">
 		        <h2 class="form-signin-heading">Introduce tus claves de acceso</h2>
 
@@ -137,28 +160,7 @@
 		        
 		      </form>
 		      
-		      <?php 
-		        // valida si existe una variable que indique que existe un error para mostrar un mensaje
-		        // valida no este vacia
-		        if (empty($_REQUEST['message'])) {
-		        }
-		        else
-		        {
-		          // si es igual a 1 existe un error
-		          if($_REQUEST['message']==1)
-		          {
-		            echo "<div style='text-align: center; color: red; font-weight: bold; font-size: 16px;''> El usuario y la contraseña son invalidos o el acceso fue restringido</div>";
-		          } 
-		          elseif ($_REQUEST['message']==2)
-		          {
-		            echo "<div style='text-align: center; color: green; font-weight: bold; font-size: 16px;''>Tu registro fue exitoso, ¡Autentifícate!</div>";
-		          } 
-		          else{
-
-		          }
-		        }
-		        
-		      ?>
+		      
 
 	    	</div> <!-- /container -->
 

@@ -52,9 +52,9 @@
 		<script src="../../plugins/hover-animations/hover-animations-1.0.min.js"></script>
 		<script src="../../plugins/match-height/match-height-0.5.1.min.js"></script>
 		<script src="../../plugins/validation/validation-2.2.min.js"></script>
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!--script src="http://maps.google.com/maps/api/js?sensor=false"></script-->
 		<script src="../../js/lollies.min.js"></script>
-		<script src="../../js/custom.js"></script>
+		<script src="../../js/customInside.js"></script>
 	</body>
 </html>
 
